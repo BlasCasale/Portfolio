@@ -1,0 +1,27 @@
+@mixin sizes ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+@mixin padRowBC ($padding, $rowgap, $bc) {
+    padding: $padding;
+    row-gap: $rowgap;
+    background-color: $bc;
+}
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexColCC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin titulosH {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}

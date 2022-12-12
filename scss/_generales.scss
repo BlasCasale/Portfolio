@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: calc($medida * 2);
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: $sexto;
+}
+body {
+    font-family: 'Playfair Display', serif;
+}
+h1 {
+    @include titulosH;
+    font-size: 5rem;
+    color: $sexto;
+}
+h2 {
+    @include titulosH;
+    font-size: 3.5rem;
+    color: $sexto;
+}
+h3 {
+    @include titulosH;
+    font-size: 2.5rem;
+}
+p {
+    margin-top: 0;
+    text-indent: 1rem;
+}

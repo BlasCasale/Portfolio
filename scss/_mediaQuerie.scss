@@ -1,0 +1,71 @@
+@media screen and (min-width: 300px) {
+    /* Header */
+    .header {
+        @include flexColCC;
+        @include padRowBC (2rem, 1rem, $primario);
+    }
+    .flex__redes {
+        @include flexRow;
+        gap: 1.5rem;
+    }
+
+    /* Mi foto y nombre*/
+    .caja__intro {
+        @include flexColCC;
+        row-gap: 3.5rem;
+        background-color: $quinto;
+        padding: 5rem 0rem;
+    }
+
+    /* Sobre mi */
+    .caja__yo {
+        @include flexColCC;
+        @include padRowBC (5rem, 2rem, $terciario);
+        color: $sexto;
+        &-p {
+            margin: 0;
+        }
+    }
+
+    /* Aptitudes */
+    .caja__aptitudes {
+        @include flexColCC;
+        @include padRowBC (1rem, 5rem, $secundario);
+        &-items {
+            @include flexRow;
+            gap: 1.5rem;
+        }
+        &-img {
+            @include sizes (19rem, 19rem);
+        }
+    }
+
+    .barra {
+        @include sizes ( 25rem, 6rem );
+        border: solid $quinto 0.2rem;
+        &__80 {
+            @include sizes ( 20rem, 6rem );
+            background-color: $sexto;
+            animation-name: ochenta;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+@keyframes ochenta {
+    0% {width: 0rem;}
+    20% {width: 4rem;}
+    40% {width: 8rem;}
+    60% {width: 12rem;}
+    80% {width: 16rem;}
+    100% {width: 20rem;}
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        display: grid;
+        grid-template-columns: 80% auto;
+        grid-template-rows: 10rem;
+        background-color: $primario;
+    }
+}
