@@ -25,3 +25,8 @@
     text-align: center;
     text-decoration: underline;
 }
+@mixin animaciones {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    background-color: $sexto;
+}
