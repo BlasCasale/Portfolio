@@ -254,7 +254,6 @@ button:hover {
     display: grid;
     grid-template-columns: 70% auto;
     grid-template-rows: 10rem;
-    background-color: #30343F;
     padding: 0.5rem;
   }
   .header__nav {
