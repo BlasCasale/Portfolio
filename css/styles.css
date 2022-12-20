@@ -84,6 +84,11 @@ button:hover {
     align-items: center;
     gap: 1.5rem;
   }
+  .fotoMia {
+    width: 30rem;
+    height: 40rem;
+    border-radius: 2rem;
+  }
   /* Mi foto y nombre*/
   .caja__intro {
     display: flex;

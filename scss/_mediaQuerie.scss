@@ -8,6 +8,10 @@
             gap: 1.5rem;
         }
     }
+    .fotoMia {
+        @include sizes (30rem, 40rem);
+        border-radius: 2rem;
+    }
 
     /* Mi foto y nombre*/
     .caja__intro {
